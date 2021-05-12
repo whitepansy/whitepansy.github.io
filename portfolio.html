@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body, p {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+p{
+  font-size: 20px;
+}
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+}
+
+article {
+    margin: auto 0;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="index.html" class="w3-bar-item w3-button">〓 Prime Web Design</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="menu.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+      <a href="reviews.html" class="w3-bar-item w3-button">Reviews</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+      <h1 class="w3-xxlarge">Le Catering</h1>
+    </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+    <div class="row" style="margin-top: 30px;">
+        <h2 class="w3-center">Check out our portfolio!</h2><br>
+        <div class="column w3-center">
+          <div class="content ">
+            <img src="axe.png" alt="Mountains" style="width:100%">
+            <p>Axe+ Wedge</p>
+          </div>
+        </div>
+        <div class="column w3-center">
+          <div class="content ">
+          <img src="gl.jpg" alt="Lights" style="width:100%">
+            <p>Guiding Tech</p>
+          </div>
+        </div>
+        <div class="column w3-center">
+          <div class="content">
+          <img src="rr.png" alt="Nature" style="width:100%">
+            <p>North Tyneside Carers Centre</p>
+          </div>
+        </div>
+        <div class="column w3-center">
+            <div class="content">
+            <img src="Travelodge-website.jpg" alt="Nature" style="width:100%">
+              <p>Warefence</p>
+            </div>
+          </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="column w3-center">
+          <div class="content">
+          <img src="bbc-news.png" alt="Mountains" style="width:100%">
+            <p>BBC News</p>
+          </div>
+        </div>
+        <div class="column w3-center">
+            <div class="content">
+            <img src="Travelodge-website.jpg" alt="Mountains" style="width:100%">
+              <p>Traveldoge</p>
+            </div>
+          </div>
+          <div class="column w3-center">
+            <div class="content">
+            <img src="str.png" alt="Nature" style="width:100%">
+              <p>Stort Valley Healthcare</p>
+            </div>
+          </div>
+          <div class="column w3-center">
+            <div class="content">
+            <img src="Screenshot-2019-09-24-at-12.37.24-1024x635.png" alt="Mountains" style="width:100%">
+              <p>University of Dundee</p>
+            </div>
+            
+          </div> 
+    </div>     
+      <!-- END GRID -->
+</div>
+      
+      <!-- END MAIN -->
+      </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32">
+  <p><title="W3.CSS" target="_blank" class="w3-hover-text-green">Copyright &copy; Maya Bosy | Introduction to Information Systems - KC3006 </a></p>
+</footer>
+
+</body>
+</html>
